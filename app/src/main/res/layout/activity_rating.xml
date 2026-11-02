@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F9F9F9"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đánh Giá Chuyến Đi"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvRideInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đang tải thông tin chuyến đi..."
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="5.0"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Nhập nhận xét hoặc góp ý của bạn về tài xế..."
+        android:gravity="top|start"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:textSize="16sp"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnSubmitRating"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Gửi Đánh Giá"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

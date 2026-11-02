@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đánh giá chuyến đi"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="5.0"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etReview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:gravity="top|start"
+        android:hint="Nhập nhận xét của bạn về tài xế..."
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnSubmitRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gửi đánh giá"
+        android:backgroundTint="#00CCCC"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvBookingId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã đơn: #123456"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái: PENDING"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnRate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Đánh giá chuyến đi"
+            android:backgroundTint="#00CCCC"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

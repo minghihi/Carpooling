@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#FFFFFF"
+    android:elevation="8dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/navHome"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iconHome"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_menu_house"
+            app:tint="#757575" />
+
+        <TextView
+            android:id="@+id/textHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="TRANG CHỦ"
+            android:textColor="#757575"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navHistory"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iconHistory"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@android:drawable/ic_menu_recent_history"
+            app:tint="#757575" />
+
+        <TextView
+            android:id="@+id/textHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="LỊCH SỬ"
+            android:textColor="#757575"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/navProfile"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iconProfile"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            app:tint="#757575" />
+
+        <TextView
+            android:id="@+id/textProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="TÀI KHOẢN"
+            android:textColor="#757575"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:tint="#333333"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Cài Đặt &amp; Tài Khoản"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THÔNG TIN CÁ NHÂN"
+                android:textColor="#757575"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Họ và tên"
+                        android:layout_marginBottom="12dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtProfileName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Số điện thoại"
+                        android:layout_marginBottom="12dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtProfilePhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:textSize="14sp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ngày sinh (DD/MM/YYYY)"
+                        android:layout_marginBottom="12dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtProfileDob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email (Không thể thay đổi)"
+                        android:layout_marginBottom="16dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtProfileEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:textSize="14sp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnSaveProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Lưu thay đổi thông tin"
+                        android:backgroundTint="#00CCCC"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        app:cornerRadius="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BẢO MẬT"
+                android:textColor="#757575"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Đổi mật khẩu"
+                android:backgroundTint="@android:color/white"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:gravity="start|center_vertical"
+                android:paddingStart="16dp"
+                app:cornerRadius="10dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#DDDDDD"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

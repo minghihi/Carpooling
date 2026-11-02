@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Quay về"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:background="#a7d6e0"
+            android:paddingHorizontal="16dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thanh Toán Trực Tuyến"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#333333"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgOnlineOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/rbWalletVnpay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/vnpay"
+                android:scaleType="centerInside"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quét mã QR / VNPay"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/rbWalletMomo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/momo"
+                android:scaleType="centerInside"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ví MoMo"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/rbWalletBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/bank"
+                android:scaleType="centerInside"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thẻ ngân hàng"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirmWallet"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Xác Nhận Thanh Toán"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bg_custom_button"/>
+
+</LinearLayout>

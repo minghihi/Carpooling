@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Chuyến Đi Hiện Tại"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDriverDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtRideStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textColor="#00CCCC"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOpenTrackingMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_orange_button"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="🗺️ Mở Bản Đồ Tracking Vị Trí Tài Xế"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCallDriver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_green_button"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="Gọi Tài Xế"
+            android:textColor="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChatDriver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_custom_button"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="Chat"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBackHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_back_button"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="Quay về trang chủ"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

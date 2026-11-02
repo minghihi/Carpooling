@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="TẠO TÀI KHOẢN"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#00CCCC"
+            android:letterSpacing="0.05"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email cùng loại sẽ được phân vào chung nhóm"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="32dp"/>
+
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Họ và tên"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Email nội bộ"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Số điện thoại"
+            android:inputType="phone"
+            android:paddingHorizontal="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký với vai trò:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#424242"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbPassenger"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hành khách"
+                android:checked="true"
+                app:buttonTint="@color/teal" />
+
+            <RadioButton
+                android:id="@+id/rbDriver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tài xế"
+                app:buttonTint="@color/teal" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="ĐĂNG KÝ TÀI KHOẢN"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_custom_button"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã có tài khoản? Đăng nhập"
+            android:textColor="#00CCCC"
+            android:textStyle="bold"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <Button
+        android:id="@+id/btnOpenList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#00CCCC"
+        android:elevation="6dp"
+        android:text="Xem Danh Sách"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:cornerRadius="8dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_bottom_sheet"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtDriverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tài xế: Đang tìm kiếm..."
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtRideInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Thông tin: -- | Ghế trống: --"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnBookRide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#00CCCC"
+            android:text="ĐẶT GHẾ NGAY"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

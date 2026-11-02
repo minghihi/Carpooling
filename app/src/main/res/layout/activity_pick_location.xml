@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapPicker"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:src="@android:drawable/ic_menu_mylocation"
+        android:contentDescription="Tâm bản đồ" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ đã chọn:"
+            android:textSize="12sp"
+            android:textColor="#777777"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/txtSelectedAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đang xác định vị trí..."
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnConfirmLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xác Nhận Vị Trí Này"
+            android:backgroundTint="#00CCCC"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

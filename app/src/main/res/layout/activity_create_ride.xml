@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Chuyến Đi Mới"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm đi (Chọn trên bản đồ):"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/txtOrigin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Chưa chọn điểm đi..."
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPickOrigin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn bản đồ"
+                android:background="@drawable/bg_custom_button"
+                android:textColor="#FFFFFF"
+                android:minHeight="40dp"
+                android:gravity="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm đến (Chọn trên bản đồ):"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/txtDestination"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Chưa chọn điểm đến..."
+                android:textSize="14sp"
+                android:gravity="center_vertical" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPickDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn bản đồ"
+                android:background="@drawable/bg_custom_button"
+                android:textColor="#FFFFFF"
+                android:minHeight="40dp"
+                android:gravity="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etDepartureTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Thời gian tài xế khởi hành"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số ghế trống"
+            android:inputType="number"
+            android:layout_marginBottom="24dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmitRide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng Chuyến Đi"
+            android:background="@drawable/bg_custom_button"
+            android:textColor="#FFFFFF"
+            android:minHeight="50dp"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
